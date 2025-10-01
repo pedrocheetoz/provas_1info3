@@ -6,4 +6,16 @@
     Peça para o usuário inserir o seu próprio nome.
     Valide se o nome inserido pelo usuário consta na lista, retornando para o usuário se ele está cadastrado ou não.
     */
+
+let usuariosCadastrados = ['admin', 'julia', 'pedro', 'lucas'];
+
+const proprioNome = prompt(`Insira seu nome`).toLowerCase();
+
+if( usuariosCadastrados.indexOf(proprioNome) >= 0 ){
+    alert(`Autorizado!`)
+} else{
+    alert(`Não autorizado!`);
+}
+
+
 </script>

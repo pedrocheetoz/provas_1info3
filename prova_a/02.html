@@ -6,4 +6,22 @@
     Usando for...of, calcule o custo total de todas as contas já com o juro aplicado.
     Apresente para o usuário qual será o valor final da compra.
     */
+    let contasNPagas = [50.00, 15.50, 120.00, 80];
+
+    const jurosUsu = Number(prompt(`Quanto de juro deve ser aplicado nessas contas não pagas\n ${contasNPagas} `))
+
+    const juroAplicado = jurosUsu / 100;
+    let total = 0;
+
+    for (let valor of contasNPagas){
+        if(valor >60){
+            total += valor * (juroAplicado + valor)
+        }
+        if( valor < 60){
+            total += valor
+        }
+    }
+
+alert(`Esse são os números somados ${total}`);
+
 </script>

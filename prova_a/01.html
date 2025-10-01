@@ -6,4 +6,19 @@
     Em seguida, utilizando for...of, conte quantos nomes na lista possuem menos de 5 caracteres. 
     Apresente para o usuário qual o número total de nomes curtos encontrados.
     */
+    let listaDeNomes = ["Ana", "Carlos", "Beatriz", "Ivo", "Fernanda", "Eder"];
+    
+    const novoNome = prompt(`Insira um novo nome na lista\n ${listaDeNomes}`);
+    listaDeNomes.push(novoNome);
+
+    let novaLista = [];
+
+    for(let nomes of listaDeNomes){
+        if (nomes.length === 5){
+            novaLista.push(nomes);
+        }
+    }
+alert(`${novaLista.join(" - ")}\n Essas são os nomes curtos.`)
+
+
 </script>
