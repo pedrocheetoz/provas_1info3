@@ -7,6 +7,17 @@
     Apresente para o usuário qual o número total de nomes longos encontrados.
     */
 
-    let nomes = ["Ana", "Carlos", "Beatriz", "Augusto", "Fernanda"];
+    let ListaDenomes = ["Ana", "Carlos", "Beatriz", "Augusto", "Fernanda"];
+
+    ListaDenomes.push(prompt(`Insira um novo nome nesta lista ${ListaDenomes}`));
+
+    let NomesGrandes = [];
+
+    for(let nomes of ListaDenomes){
+        if (nomes.length > 5){
+            NomesGrandes.push(nomes)
+        }
+    }
+alert(`Esses são os nomes longos ${NomesGrandes.join(" - ")}`);
 
 </script>
